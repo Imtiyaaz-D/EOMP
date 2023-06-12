@@ -21,13 +21,13 @@ let products = [{
     Description : "A pair of vans tekkies",
 },
 ]
-console.log(products)
+// console.log(products)
 products.forEach(item =>{
     table.innerHTML +=
     `<tr>
     <td>${item.id}</td>
     <td>${item.name}</td>
-    <td>${item.price}</td>
+    <td>R${item.price}</td>
     <td><img src="${item.image}" alt="${item.name}"></td>
     <td>${item.Description}</td>
     <td><button>add</button></td>
