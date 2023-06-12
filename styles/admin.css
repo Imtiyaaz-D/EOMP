@@ -3,3 +3,27 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* .tr {
+    border: 2px solid black;
+} */
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem;
+    padding: 3rem;
+    border: 2px solid black;
+    
+
+}
+.h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* @media screen {(300px)
+   .container{
+    max-width: 300px;
+    max-height: 300px;
+   } 
+} */
