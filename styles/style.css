@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .navbar-nav{
+    display: flex !important;
+    justify-content: end !important;
+    align-items: end !important;
+} */
+:root{
+    --bg-color:#A4A8D1;
+    --main-color:#F6FEAA;
+    --text-color:#313D5A;
+    --2nd-color: #434343;
+    --other-font: #666666;
+    --big-font:5rem;
+    --h2-font:2.3rem;
+    --p-font:1.3rem;
+
+}
