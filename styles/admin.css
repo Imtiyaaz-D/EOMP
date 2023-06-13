@@ -23,16 +23,6 @@
     border: #A4A8D1 solid 2px;
 }
 
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5rem;
-    padding: 3rem;
-    border: 2px solid black;
-    
-
-}
 .h2{
     display: flex;
     justify-content: center;
