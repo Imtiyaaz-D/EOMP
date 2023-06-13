@@ -3,9 +3,26 @@
     padding: 0;
     box-sizing: border-box;
 }
-/* .tr {
-    border: 2px solid black;
-} */
+.container-fluid{
+    background-color: #A4A8D1;
+}
+.btp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    border: #A4A8D1 solid 2px;
+    /* display: flex; */
+    justify-content: center;
+    text-align: center;
+}
+.tr{
+    /* display: flex; */
+    /* width: 18rem; */
+    border: #A4A8D1 solid 2px;
+}
+
 .container{
     display: flex;
     justify-content: space-between;
