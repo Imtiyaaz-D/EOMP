@@ -22,7 +22,7 @@ let products = [{
     Description : "A pair of vans takkies",
 },
 ]
-console.log(products)
+// console.log(products)
 products.forEach(item =>{
     table.innerHTML +=
     `<tr>
