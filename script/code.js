@@ -1,19 +1,15 @@
-// const carousel = document.querySelector("carousel")
-
-let tabl = document.querySelector('table-cont')
-
-// let products = [];
-let shoe = [{
+const hc = document.querySelector('.hc')
+let products = [{
     id : "1",
     name:"Converse-Black",
     price : 600,
-    image : "https://i.postimg.cc/28DN5jKQ/images-shoe-all-star.jpg",
+    image : "https://i.postimg.cc/Ghg2F0DS/images-shoe-all-star.jpg",
     Description : "A pair of black Converse tekkies",
 },
 {   id : "2",
     name:"Converse-White",
     price : 750,
-    image : "https://i.postimg.cc/XJWF1CvH/istockphoto-175537625-612x612-convserve-shoe-3.jpg",
+    image : "https://i.postimg.cc/mDPVrWQf/istockphoto-175537625-612x612-convserve-shoe-3.jpg",
     Description : "A pair of white Converse tekkies",
 },
 {
@@ -24,15 +20,3 @@ let shoe = [{
     Description : "A pair of vans tekkies",
 },
 ]
-console.log(shoe)
-shoe.forEach(data =>{
-    tabl.innerHTML +=
-    `<tr>
-    <th>${item.id}</th>
-    <th>${item.name}</th>
-    <th><img src="${item.image}" alt="${item.name}"></th>
-    <th>${item.Description}</th>
-    <th><button>add</button></th>
-    <th><button>delete</button></th>
-  </tr>`
-})

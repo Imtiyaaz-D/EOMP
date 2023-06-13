@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container-fluid{
+    background-color: #A4A8D1;
+}
+body{
+    background-image: url(https://i.postimg.cc/ZRL60MQL/desktop-wallpaper-the-chicago-running-shoe-pack-saucony-blog-for-your-mobile-tablet-explore-saucony.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.about-section{
+    margin-top: 15rem;
+    text-align: center;
+    color: white;
+}
+/* .form{
+    border: 2px white dotted;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+} */

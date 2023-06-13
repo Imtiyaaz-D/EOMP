@@ -28,7 +28,7 @@
         </div>
       </nav>
       <!-- table -->
-      <table class="box">
+      <table class="box w-100">
         <tr>
             <th>ID</th>
             <th>Name</th>
@@ -38,8 +38,44 @@
             <th>Add</th>
             <th>Delete</th>
         </tr>
-        
+       
       </table>
+
+       <!-- Button trigger modal -->
+       <div class="btp">
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Add new product
+      </button>
+    </div>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Adding a new product</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p>id</p>
+              <input type="text" placeholder="Enter the id" class="intp w-100">
+              <p>Name</p>
+              <input type="text" placeholder="Enter the name of product" class="intp w-100">
+              <p>Price</p>
+              <input type="text" placeholder="Enter the price" class="intp w-100">
+              <p>Image</p>
+              <input type="text" placeholder="Enter the Image url" class="intp w-100">
+              <p>Description</p>
+              <input type="text" placeholder="Enter the description" class="intp w-100">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Add to admin</button>
+            </div>
+          </div>
+        </div>
+      </div>
+  
         <!-- custom script -->
       <script src="../script/admin.js"></script>
       <!-- bootstrap script -->
