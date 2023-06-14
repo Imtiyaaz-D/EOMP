@@ -32,19 +32,17 @@
         <h2>“Do not follow where the path may lead. Go, instead, where there is no path and leave a trail.” — Ralph Waldo Emerson</h2>
       </div>
       <section class="form">
-      <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/{form_id}" method="post">
-        <fieldset id="fs-frm-inputs">
-          <label for="full-name">Full Name</label>
-          <input type="text" name="name" id="full-name" placeholder="First Name" required="">
-          <label for="full-name">Last Name</label>
-          <input type="text" name="name" id="full-name" placeholder="First Name" required="">
-          <label for="email-address">Email Address</label>
-          <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-          <label for="message">Message</label>
-          <textarea rows="5" name="message" id="message" placeholder="Please submit your message here" required=""></textarea>
-          <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-        </fieldset>
-        <input type="submit" value="Submit">
+      <form id="fs-frm" name="contact-form" action="https://formspree.io/f/xwkzrbbv" method="post">
+          <label for="full-name"  class="form-label">Full Name</label>
+          <input type="text" name="name" class="form-control" id="full-name" placeholder="First Name" required>
+          <label for="full-name" class="form-label">Last Name</label>
+          <input type="text" name="name" class="form-control" id="full-name" placeholder="First Name" required>
+          <label for="email-address"  class="form-label">Email Address</label>
+          <input type="email" name="_replyto" class="form-control" id="email-address" placeholder="email@domain.tld" required>
+          <label for="message"  class="form-label">Message</label>
+          <textarea rows="5" name="message" id="message" class="form-control" placeholder="Please submit your message here" required></textarea>
+          <input type="hidden" name="_subject" class="form-control" id="email-subject" value="Contact Form Submission">
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
       </form>
     </section>
       <!-- bootstrap script -->
