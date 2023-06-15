@@ -1,7 +1,7 @@
 // debugger
 let table = document.querySelector("#product-table")
 // let output =document.querySelector('#items')
-let table = document.querySelector(".box")
+// let table = document.querySelector(".box")
 const addBtn = document.querySelector('#add-btn')
 let tempName = document.querySelector('.intpName')
 let tempPrice = document.querySelector('.intpPrice')
@@ -124,4 +124,4 @@ addBtn.addEventListener('click', (e)=>{
     console.log(products)
     localStorage.setItem('item',JSON.stringify(products))
     renderData()
-
+})
