@@ -8,8 +8,9 @@
 }
 .btp{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
+    gap: 2rem;
 }
 .box{
     border: #A4A8D1 solid 2px;

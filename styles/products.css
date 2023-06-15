@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+.container-fluid{
+    background-color: #A4A8D1;
+}
+.product-card{
+    display: flex;
+    justify-content: center;
+    
+}
