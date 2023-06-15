@@ -1,7 +1,15 @@
 // debugger
+let table = document.querySelector("#product-table")
 // let output =document.querySelector('#items')
 let table = document.querySelector(".box")
 const addBtn = document.querySelector('#add-btn')
+let tempName = document.querySelector('.intpName')
+let tempPrice = document.querySelector('.intpPrice')
+let tempImage = document.querySelector('.intpImg')
+let tempDescription = document.querySelector('.intpDescr')
+let tempID = 0;
+// let output = document.querySelector(".output")//output
+// const productsD = JSON.parse(localStorage.getItem("item"))
 let products = JSON.parse(localStorage.getItem('item')) ?
 JSON.parse(localStorage.getItem('item')) : 
 localStorage.setItem('item',JSON.stringify([{
@@ -27,6 +35,7 @@ localStorage.setItem('item',JSON.stringify([{
 ]))
 
 
+// Table Render
 function renderData(){
     table.innerHTML = ''
     products.forEach((data) =>{
@@ -38,7 +47,9 @@ function renderData(){
         <td>R${data.price}</td>
         <td><img src="${data.image}" alt="${data.name}" style="width: 18rem"></td>
         <td>${data.Description}</td>
-        <td><button id="deleteBtn">delete</button></td>
+
+        <td><button class ="del">delete</button></td>
+
         <td><button>edit</button></td>
       </tr>
         `
@@ -47,9 +58,52 @@ function renderData(){
 }
 
 renderData()
+// let btn = document.querySelector('#btn')
+
+function deleteButtons(){
+    removeBtns = [...document.querySelector('.close-btn')];
+    removeBtns.forEach((item)=>{
+        item.addEventListener('click',deleteItem)
+    })
+}
+
+
+// delete
+// function deleteItem(event){
+//     let startPoint = removeBtns.indexOf(event.target);
+//     products.splice(startPoint, 1);
+//     localStorage.setItem('products',JSON.stringify(products))
+//     update();
+// }
+let remove = document.getElementsByClassName('del')
+console.log(remove)
+for (let i = 0; i< remove.length; i++){
+    let button = remove[i]
+    button.addEventListener('click', function(event){
+      let buttonAccesed=event.target
+      buttonAccesed.parentElement.parentElement.remove()
+        updateTotal()
+    })
+}
+
+// function adminData(){
+//     table.forEach((item)=>{
+//         productsD.innerHTML+=
+//     `
+//     <tr>
+//     <td id="td1">${item.Name}</td>
+//     <td id="td2"><img class ="image-fluid image"scr="${item.imageUrl}" loading="lazy" alt="${item.Name}"></td>
+//     <td id="td3">R${item.price}</td>
+//     <td id="td4">${item.Description}</td>
+//     <td id="td5"></td>
+//     </tr>
+//     `
+//     })  
+// }
 
 
 
+// adminData()
 
 // add button
 addBtn.addEventListener('click', (e)=>{
@@ -70,23 +124,4 @@ addBtn.addEventListener('click', (e)=>{
     console.log(products)
     localStorage.setItem('item',JSON.stringify(products))
     renderData()
-
-})
-
-// delete button
-// function deleteButton(data){
-//     remove = [...document.querySelectorAll("#deleteBtn")];
-//     remove.forEach((data)=>{
-//       data.addEventListener('click', removeProduct)
-//     })
-//     function removeProduct(event){
-//       output.innerHTML = ""
-//       let start = remove.indexOf(event.target);
-//       products.splice(start, 1);
-//       localStorage.setItem("product-list", JSON.stringify(products))
-//       displayProduct();
-//     }
-//     }
-
-
 

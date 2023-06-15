@@ -15,7 +15,8 @@ body{
 .about-section{
     margin-top: 15rem;
     text-align: center;
-    color: white;
+    color: black;
+    background-color: #A4A8D1;
 }
 /* .form{
     border: 2px white dotted;

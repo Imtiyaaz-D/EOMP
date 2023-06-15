@@ -27,9 +27,17 @@
           </div>
         </div>
       </nav>
+      <!-- Button trigger modal -->
+      <div class="btp">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Add new product
+        </button>
+        <button class="btn btn-success">sort</button>
+      </div>
       <!-- table -->
-      <div class="container">
-      <table class="w-100">
+
+      
+      <table class="box w-100">
         <thead>
         <tr>
             <th>ID</th>
@@ -41,18 +49,12 @@
             <th>Update</th>
         </tr>
       </thead>
-      <tbody class="box">
-        
+      <tbody id="product-table">
+
       </tbody>
       </table>
-    </div>
 
-       <!-- Button trigger modal -->
-       <div class="btp">
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        Add new product
-      </button>
-    </div>
+       
       
       <!-- Modal -->
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -64,15 +66,15 @@
             </div>
             <div class="modal-body">
               <p>id</p>
-              <input  id="id" type="text" placeholder="Enter the id" class="intp w-100">
+              <input  id="id" type="text" placeholder="Enter the id" class="intpID w-100">
               <p>Name</p>
-              <input  id="name"type="text" placeholder="Enter the name of product" class="intp w-100">
+              <input  id="name"type="text" placeholder="Enter the name of product" class="intpName w-100">
               <p>Price</p>
-              <input  id="price" type="text" placeholder="Enter the price" class="intp w-100">
+              <input  id="price" type="text" placeholder="Enter the price" class="intpPrice w-100">
               <p>Image</p>
-              <input  id="img" type="url" placeholder="Enter the Image url" class="intp w-100">
+              <input  id="img" type="url" placeholder="Enter the Image url" class="intpImg w-100">
               <p>Description</p>
-              <input  id="description" type="text" placeholder="Enter the description" class="intp w-100">
+              <input  id="description" type="text" placeholder="Enter the description" class="intpDescr w-100">
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
